@@ -1,0 +1,12 @@
+version: '3.7'
+
+services: 
+
+  app:
+    build:
+      context: .
+      target: test
+      args:
+        - NODE_ENV=test
+    env_file:
+      - .env.test
