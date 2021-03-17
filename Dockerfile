@@ -1,4 +1,4 @@
-# BASE
+# Base Image (User alpine for image efficiency)
 FROM node:14.16.0-alpine as base
 
 # set our node environment, either development or production
