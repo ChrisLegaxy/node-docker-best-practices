@@ -1,0 +1,23 @@
+version: '3.7'
+
+services: 
+
+  app:
+    build:
+      context: .
+      target: dev
+      args:
+        - NODE_ENV=development
+    ports:
+      - 7000:3000
+    volumes:
+      # src
+      - .:/opt/node/app:delegated
+      # package.json
+      - ./package.json:/opt/node/package.json
+      # yarn.lock
+      - ./package-lock.json:/opt/node/yarn.lock
+      # unused
+      - /opt/node/app/node_modules
+    env_file:
+      - .env.dev
