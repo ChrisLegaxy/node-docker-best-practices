@@ -1,3 +1,57 @@
+# Node with Docker Best Practices
+
+This project is heavily focused on the Dockerfile. In addition, there are also some docker-compose examples to follow. Everything here is mostly inspired & learned from non other than Bret Fisher.
+
+## Technology
+
+The project uses the following technology stack:
+
+> **JS Runtime**: [Node](https://nodejs.org/en/)
+
+> **The Best Node Framework**: [Nest JS](https://nestjs.com/) 
+
+> **Containerization**: [Docker](https://www.docker.com/) 
+
+# Prerequisite
+
+* docker
+* docker-compose
+
+# Get project up & running
+
+```bash
+# Clone Repo via SSH
+$ git clone $REPO
+
+# Go into the directory
+$ cd $REPO
+
+# Run in development mode
+$ docker-compose -f docker-compose.dev.yml up --build -d
+
+# Run in proudction mode
+$ docker-compose -f docker-compose.prod.yml up --build -d
+```
+
+## Author
+
+> **Vansen Hengmeanrith (Chris Legaxy/Chris Van)** 😎  
+
+> **Contact** chris.legaxy@gmail.com | chrisvan.vshmr@gmail.com  
+
+> **Website** https://chrisvan.netlify.app  
+
+## License
+
+MIT License  
+
+## Credit
+
+- Thanks to Bret Fisher for making the awesome courses on Node & Docker on Udemy [Bret Fisher]( https://www.bretfisher.com/)
+
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
