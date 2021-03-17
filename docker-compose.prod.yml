@@ -1,0 +1,14 @@
+version: '3.7'
+
+services: 
+
+  app:
+    build:
+      context: .
+      target: prod
+      args:
+        - NODE_ENV=production
+    ports:
+      - 9000:3000
+    env_file:
+      - .env.prod
